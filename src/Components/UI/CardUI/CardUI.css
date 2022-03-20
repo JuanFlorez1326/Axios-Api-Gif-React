@@ -1,0 +1,20 @@
+.divCardUI {
+    border:2px solid black;
+    width:30%;
+    margin:auto;
+    text-align:center;
+}
+.divCardUI {
+    margin-bottom:1%;
+}
+.divInfo{
+    display:flex;
+    flex-wrap:wrap;
+}
+.txtTitle{
+    font-size:20px;
+}
+.imgCard{
+    width:300px;
+    height:300px;
+}
