@@ -24,7 +24,11 @@
     height:300px;
 }
 @media screen and (max-width: 767px){
+    .imgCard{
+        width:250px;
+        height:250px;
+    }
     .divCardUI{
-        width:70%;
+        width:75%;
     }
 }
