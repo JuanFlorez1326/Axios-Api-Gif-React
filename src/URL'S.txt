@@ -1,0 +1,5 @@
+URL API_KEY = https://developers.giphy.com/dashboard/#
+API_KEY JUAN = rTPCVxAn7IZy5r8bFByK547YgW7MfwET
+API_EXPLORER = https://developers.giphy.com/explorer/#explorer
+URL_COMPLETA = https://api.giphy.com/v1/stickers/search?api_key=rTPCVxAn7IZy5r8bFByK547YgW7MfwET&q=goku&limit=16&offset=0&rating=g&lang=en
+EncodeURI = https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/encodeURI

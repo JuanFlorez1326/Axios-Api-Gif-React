@@ -9,10 +9,15 @@
 }
 .divInfo{
     display:flex;
-    flex-wrap:wrap;
 }
 .txtTitle{
     font-size:20px;
+    background-color:brown;
+    margin:0;
+    padding:0;
+}
+.txtTitle {
+    padding:10px;
 }
 .imgCard{
     width:300px;

@@ -8,14 +8,12 @@ export const Gif = () => {
 
   const [card, setCard] = useState([]);
 
-  const UrlGif = "https://api.giphy.com/v1/stickers/search?"
-  const key = "api_key=I4ub2ABDFChWF6nfeWp8yNiJIhRNDpsF"
-  const limit = "&limit=16"
-  const query = "&q="
-
   const GetCardsGif = (event) => {
-    axios.get(`${UrlGif}${key}${query}${/*encodeURI*/(event.target.value)}${limit}`)    
-    .then(response =>  setCard(response.data.data))
+
+    const URL = `https://api.giphy.com/v1/stickers/search?api_key=rTPCVxAn7IZy5r8bFByK547YgW7MfwET&q=${event.target.value}&limit=16`
+
+    axios.get(URL)    
+    .then(response => setCard(response.data.data))
     .catch(error => console.log(error))
   }
 
@@ -27,7 +25,9 @@ export const Gif = () => {
       </div>  
 
       <main className='divMain'>
-        { card.map(card => (<CardUI key={card.id/*+card.title*/} text={card.title} image={card.images.downsized_medium.url} />)) }
+        <div>
+          { card.map(card => (<CardUI key={card.id} text={card.title} image={card.images.downsized.url} />)) }
+        </div>
       </main>
 
     </div>

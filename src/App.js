@@ -4,7 +4,6 @@ import { Header } from './Components/Layouts/Header/Header'
 import { Gif } from './Components/Layouts/Gif/Gif'
 import { Footer } from './Components/Layouts/Footer/Footer'
 
-
 function App() {
   return (
     <div className="App">
@@ -14,4 +13,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default App
